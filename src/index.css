@@ -9,3 +9,6 @@ body {
     padding: 0px;
     font-family: 'Nunito Sans';
 }
+img {
+    max-width: 100%;
+}

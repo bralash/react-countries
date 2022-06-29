@@ -23,9 +23,6 @@ const DarkModeProvider = ({ children }) => {
             html.classList.add('dark')
             window.localStorage.setItem('theme','dark')
         }
-
-        
-
     }, [isDarkMode])
 
     return (
