@@ -1,10 +1,7 @@
-import React, { useContext } from 'react'
-import { BsMoon } from 'react-icons/bs'
-import { DarkModeContext } from '../contexts/DarkModeContext'
+import React from 'react'
 import Toggle from './Toggle'
 
 const Navbar = () => { 
-  const {isDarkMode} = useContext(DarkModeContext)
   return (
     <div className='navbar flex flex-row justify-between py-7 px-20 shadow dark:bg-default-dark dark:text-white'>
         <div className="brand font-extrabold text-2xl dark:text-white">Where in the world?</div>

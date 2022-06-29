@@ -5,7 +5,7 @@ const DarkModeContext = createContext();
 
 
 const DarkModeProvider = ({ children }) => {
-    const [isDarkMode, setIsDarkMode] = useState('dark');
+    const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme'));
 
     const toggleTheme = () => {
         setIsDarkMode(() => isDarkMode === 'dark' ? 'light' : 'dark')
@@ -24,13 +24,7 @@ const DarkModeProvider = ({ children }) => {
             window.localStorage.setItem('theme','dark')
         }
 
-        // const prevTheme = isDarkMode === 'dark'? 'light' : 'dark';
-        // html.classList.remove(prevTheme);
-
-        // const nextTheme = isDarkMode === 'light' ? 'dark' : 'light';
-        // html.classList.add(nextTheme);
-
-        // localStorage.setItem('theme',nextTheme);
+        
 
     }, [isDarkMode])
 
