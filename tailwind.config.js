@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         'nav-dark':'#2B3844',
         'body-dark':'#202C36'
+      },
+      height: {
+        'ch': '336px'
       }
     },
   },
